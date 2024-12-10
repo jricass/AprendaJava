@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav id="silas" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Aprenda Java</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#sintaxe">Sintaxe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bibliotecas">Bibliotecas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exemplos">Exemplos de Código</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aplicacoes">Aplicações Práticas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container mt-5 pt-5">
+        <!-- Introdução -->
+        <section id="introducao" class="my-5">
+            <h1 class="text-center">Bem-vindo ao Guia de Programação Java</h1>
+            <br>
+            <p class="lead">Java é uma linguagem de programação de propósito geral, orientada a objetos, que foi desenvolvida pela Sun Microsystems (agora parte da Oracle) e lançada em 1995. Uma das principais características do Java é a sua portabilidade, o que significa que programas escritos em Java podem ser executados em qualquer dispositivo que tenha uma máquina virtual Java (JVM). Essa característica é resumida pelo slogan "Write Once, Run Anywhere" (Escreva uma vez, execute em qualquer lugar).</p>
+            <br>
+            <p class="lead">Java é amplamente utilizada para desenvolvimento de aplicativos web, aplicações corporativas, aplicativos móveis (especialmente Android), sistemas embarcados e muito mais. Sua robustez, segurança e facilidade de uso a tornaram uma das linguagens de programação mais populares e duradouras.</p>
+            <br>
+            <p class="lead">Além de sua portabilidade, Java também é conhecida por sua segurança. A linguagem foi projetada com a segurança em mente, incluindo características como a verificação de tipos em tempo de execução, gerenciamento automático de memória e a proibição de ponteiros explícitos. Essas características ajudam a proteger contra uma ampla gama de vulnerabilidades, tornando Java uma escolha confiável para aplicações críticas e sensíveis à segurança.</p>
+            <br>
+            <p class="lead">Outra vantagem significativa do Java é seu extenso ecossistema de bibliotecas e frameworks. Desde ferramentas para desenvolvimento web como Spring e Hibernate, até bibliotecas para teste e integração contínua como JUnit e Maven, o Java oferece um suporte abrangente para desenvolvedores em todas as etapas do ciclo de vida do software. Esse ecossistema rico facilita a construção de aplicações robustas, escaláveis e eficientes.</p>
+          </section>
+
+        <!-- Sintaxe -->
+        <section id="sintaxe" class="my-5">
+            <h2>Sintaxe Básica</h2>
+            <p>Em Java, a sintaxe básica inclui a declaração de variáveis, controle de fluxo, loops e manipulação de dados. Abaixo, mostramos um exemplo simples de código:</p>
+            <pre><code class="language-java">public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Olá, Mundo!");
+    }
+}</code></pre>
+        </section>
+
+        <!-- Bibliotecas -->
+        <section id="bibliotecas" class="my-5">
+            <h2>Principais Bibliotecas</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Java Standard Library</li>
+                <li class="list-group-item">Apache Commons</li>
+                <li class="list-group-item">JUnit</li>
+                <li class="list-group-item">Spring Framework</li>
+                <li class="list-group-item">Hibernate</li>
+                <li class="list-group-item">Maven</li>
+            </ul>
+        </section>
+
+        <!-- Exemplos de Código -->
+        <section id="exemplos" class="my-5">
+            <h2>Exemplos de Código</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">Exemplo 1: Hello World</div>
+                        <div class="card-body">
+                            <pre><code class="language-java">public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Olá, Mundo!");
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">Exemplo 2: Laços de Repetição</div>
+                        <div class="card-body">
+                            <pre><code class="language-java">for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-header">Exemplo 3: Construtores</div>
+                        <div class="card-body">
+                            <pre><code class="language-java">public Carro(String modelo, double preco){
+   this.cor = “PRETA”;
+   this.modelo = modelo;
+   this.preco = preco
+   }
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aplicações Práticas -->
+        <section id="aplicacoes" class="my-5">
+            <h2>Aplicações Práticas de Java</h2>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img-c.udemycdn.com/course/750x422/3421884_ee54_5.jpg" class="d-block w-100" alt="Aplicação 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://blog.seventh.com.br/wp-content/uploads/2024/02/IMG-1-1024x576.png" class="d-block w-100" alt="Aplicação 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://miro.medium.com/v2/resize:fit:720/1*Dt_BhEzzOpchoVBvQhhCxA.png" class="d-block w-100" alt="Aplicação 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais sobre Java</button>
+        <p></p>
+        <br>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Aprenda mais</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR">Melhor Curso de POO em Java que existe!</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; Aprenda Java</p>
+        <p>Contato: IsaacJava@java.com</p>
+        <p>91 9999-0000</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

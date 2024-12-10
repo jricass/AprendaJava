@@ -1,0 +1,137 @@
+:root {
+    --cor-primaria: #d8cbaf; /* Azul principal */
+    --cor-secundaria: #198754; /* Verde secundário */
+    --cor-fundo: #1e1e2e; /* Cor de fundo */
+    --cor-texto: #11111b; /* Cor do texto */
+}
+
+.silas {
+  background-color: #11111b;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Arial', sans-serif;
+}
+
+.carousel-inner {
+  border-radius: 40px;
+  border: 4px solid rgb(73, 73, 73);
+}
+
+.navbar {
+    background-color: var(--cor-primaria);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#introducao {
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 10px;
+  padding: 90px;
+  background-color: rgb(235, 235, 235);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+}
+
+#sintaxe {
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 10px;
+  padding: 90px;
+  background-color: rgb(235, 235, 235);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: var(--cor-primaria);
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
